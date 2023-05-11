@@ -1,0 +1,185 @@
+@use 'helpers' as *;
+
+.heading--h1 {
+  font-family: $secondary-font;
+  @include font-style(44, 52);
+  margin: 150px 0 20px;
+
+  @media screen and (max-width: 768px) {
+    margin: 70px 0 20px ;
+  }
+
+  @media screen and (max-width: 376px) {
+    margin: 50px 0 20px;
+    @include font-style(30, 35);
+  }
+}
+
+.text-italic {
+  color: $blue-color;
+  font-style: $secondary-font-italic;
+}
+
+.subtitle {
+  font-family: $main-font;
+  @include font-style(18, 26, 0, #fff, 0.8, 300);
+
+  @media screen and (max-width: 768px) {
+    @include font-style(15, 26, 0, #fff, 0.8, 300);
+  }
+
+  @media screen and (max-width: 376px) {
+    @include font-style(15, 20, 0, #fff, 0.8, 300);
+  }
+}
+
+.opacity {
+  @media screen and (max-width: 768), (max-width: 376px) {
+    opacity: 0.3;
+  }
+}
+
+.price {
+  font-family: $secondary-font;
+  @include font-style(68, 72, 0, #fff);
+  margin: 0 56px 12px;
+
+  &-symbol {
+    @include font-style(40, 50);
+
+    @media screen and (max-width: 376px) {
+      @include font-style(20, 20, 0, #fff);
+      margin: 0 20px 12px;
+    }
+  }
+
+  @media screen and (max-width: 768px), (max-width: 375px) {
+    @include font-style(45, 72, 0, #fff);
+    margin: 0 40px 12px;
+  }
+
+  @media screen and (max-width: 376px) {
+    @include font-style(25, 28, 0, #fff);
+    margin: 10px 40px 5px;
+    
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.item__heading {
+  font-family: $secondary-font;
+  @include font-style(40, 48);
+  margin: 0 0 30px;
+
+  @media screen and (max-width: 768px), (max-width: 375px) {
+    @include font-style(25, 30, 0, #fff);
+  }
+
+  @media screen and (max-width: 376px) {
+    @include font-style(20, 20, 0, #fff);
+  }
+}
+
+.quote {
+  font-family: $main-font;
+  @include font-style(32, 46, 0.04);
+  position: relative;
+
+  @media screen and (max-width: 768px), (max-width: 375px) {
+    @include font-style(25, 30, 0, #fff);
+  }
+
+  @media screen and (max-width: 376px) {
+    @include font-style(18, 20, 0, #fff);
+  }
+  
+  &::before {
+    content: '';
+    background-image: url(../icons/quote-icon.png);
+    position: absolute;
+    top: -34px;
+    left: -60px;
+    width: 102px;
+    height: 84px;
+
+    @media screen and (max-width: 376px) {
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 80px;
+      height: 70px;
+      left: -50px;
+    }
+  }
+}
+
+.quote--author {
+  font-family: $secondary-font;
+  @include font-style(20, 20, 0.08);
+  font-style: $secondary-font-italic;
+
+  @media screen and (max-width: 376px) {
+    @include font-style(18, 20, 0, #fff);
+  }
+}
+
+.heading--h4 {
+  font-family: $secondary-font;
+  @include font-style(24, 48);
+  margin: 0 110px 0 0;
+
+  @media screen and (max-width: 376px) {
+    @include font-style(18, 20, 0, #fff);
+  }
+}
+
+.card-text {
+  font-family: $main-font;
+  @include font-style(16, 26, 0, #fff, 0.8 )
+}
+
+.footer--heading {
+  font-family: $secondary-font;
+  @include font-style(40, 39);
+  margin: 29px 0;
+
+  @media screen and (max-width: 376px) {
+    @include font-style(30, 35);
+  }
+}
+
+.form--text{
+  font-family: $secondary-font;
+  font-style: $secondary-font-italic;
+  @include font-style(18, 20, 0.08);
+  background: transparent;
+  position: relative;
+  border: none;
+}
+
+.footer--text {
+  font-family: $main-font;
+  @include font-style(14, 26, 0, #fff, 0.6, 300);
+  margin: 0 13px 0 0;
+}
+
+.footer--link {
+  font-family: $main-font;
+  @include font-style(14, 24, 0.08, #fff, 1);
+
+  &:hover{
+    color: $green-color;
+  }
+}
+
+.text-center-resp {
+  @media screen and (max-width: 376px) {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+
+

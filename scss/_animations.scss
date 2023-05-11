@@ -1,0 +1,41 @@
+@use 'helpers' as *;
+
+@keyframes bg-shadow {
+  0% {
+    box-shadow: 4px 10px 10px 10px lighten($color: #fff, $amount: 10%);
+  }
+  50% {
+    box-shadow: 5px 5px 5px 10px lighten($color: #fff, $amount: 50%);
+  }
+  100%{
+    box-shadow: 10px 10px 10px 10px lighten($color: #fff, $amount: 100%);
+  }
+}
+
+@keyframes border-color {
+  0% {
+    border-color: lighten($color: #fff, $amount: 10%);
+    
+  }
+  100% {
+    border-color: $green-color;
+    box-shadow: 2px 5px 5px 5px lighten($color: $main-color, $amount: 100%);
+  }
+}
+
+.animate__pulse {
+  animation-iteration-count: infinite;
+}
+
+.animate__heartBeat {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  &:hover {
+    animation-iteration-count: 0;
+  }
+}
+
+.animate__jackInTheBox {
+  animation-delay: 1s;
+}

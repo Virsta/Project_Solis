@@ -1,0 +1,15 @@
+@mixin flex-box ($direction: row, $justify: initial, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  gap: #{$gap}px;
+}
+
+@mixin font-style($font-size: 16, $line-height: 27, $letter-spacing: 0, $color: #fff, $opacity: initial, $font-weight: 400) {
+  font-size: #{$font-size}px;
+  line-height: #{$line-height}px;
+  letter-spacing: #{$letter-spacing}em;
+  color: $color;
+  opacity: $opacity;
+  font-weight: #{$font-weight};
+}

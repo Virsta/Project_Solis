@@ -1,0 +1,202 @@
+@use 'helpers' as *;
+
+.bg {
+  background-image: url(../images/first-screen-image.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  max-width: 100%;
+  height: 100%;
+
+  @media screen and (max-width: 1400px) {
+    background-image: url(../images/first-screen-image@2x.png);
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width: 1920px) {
+    background-image: url(../images/first-screen-image@3x.png);
+    background-repeat: no-repeat;
+  }
+}
+
+.bg-header {
+  background: linear-gradient(270deg, rgba(22, 25, 38, 0.5) 0%, rgba(22, 25, 38, 0) 24.1%, rgba(22, 25, 38, 0) 47.19%), rgba(22, 25, 38, 0.02);
+  backdrop-filter: blur(4.5px);
+  padding: 24px 0;
+  margin-top: 30px;
+  max-height: 80px;
+
+  @media screen and (max-width: 376px) {
+    padding: 20px 0;
+  }
+}
+
+.img-position {
+  position: absolute;
+
+  @media screen and (max-width: 376px) {
+    width: 300px;
+  }
+}
+
+.bg-dark {
+  background: $background-color;
+  opacity: 0.9;
+  min-width: 770px;
+  min-height: 580px;
+  position: relative;
+  top: 45px;
+  left: 400px;
+  padding: 45px 0;
+
+  @media screen and (max-width: 768px) {
+    min-width: 500px;
+    left: 70px;
+  }
+
+  @media screen and (max-width: 376px) {
+    top: 10px;
+    min-width: 200px;
+    max-width: 350px;
+    left: 15px;
+    padding: 20px;
+  }
+
+}
+
+.img-bg {
+  background-image: url(../images/quote-background.png);
+  width: 100%;
+  max-height: 400px;
+  padding: 100px 300px 100px 160px;
+  margin-bottom: 120px;
+
+  &:hover {
+      animation-name: bg-shadow;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 50px 100px;
+    margin-bottom: 50px;
+  }
+
+  @media screen and (max-width: 376px) {
+    padding: 20px 50px;
+    margin-bottom: 50px;
+  }
+
+  @media screen and (max-width: 1400px) {
+    background-image: url(../images/quote-background@2x.png);
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width: 1920px) {
+    background-image: url(../images/quote-background@3x.png);
+    background-repeat: no-repeat;
+  }
+}
+
+.width-970 {
+  margin: 0 auto;
+  max-width: 970px;
+  @include flex-box(column, space-between, 50)
+}
+
+.video--border {
+  border: 1px solid #515773;
+  border-radius: 32px;
+  padding: 30px 70px 30px 30px;
+  position: relative;
+
+  @media screen and (max-width: 376px) {
+    transform: rotate(90deg);
+  }
+
+  &::before {
+    content: '';
+    border: 1px solid #515773;
+    border-radius: 32px;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 50%;
+    left: 8px;
+
+    @media screen and (max-width: 376px) {
+      top: 165px;
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  &::after {
+    content: '';
+    border: 1px solid #515773;
+    border-radius: 32px;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 50%;
+    right: 14px;
+
+    @media screen and (max-width: 376px) {
+      top: 160px;
+      right: 10px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &:hover  {
+    animation-name: border-color;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+  }
+}
+
+.bg-dark-2 {
+  background: $background-color;
+  opacity: 0.9;
+  max-width: 770px;
+  min-height: 450px;
+  position: relative;
+  top: 45px;
+  left: 400px;
+  padding: 75px 0 75px 70px;
+
+  @media screen and (max-width: 768px) {
+    max-width: 600px;
+    left: 150px;
+    padding: 40px;
+  }
+
+  @media screen and (max-width: 376px) {
+    max-width: 350px;
+    top: 10px;
+    left: 10px;
+    padding: 20px;
+  }
+}
+
+.footer--border {
+  border-top: 1px solid #515773;
+  border-bottom: 1px solid #515773;
+  margin-top: 100px;
+  padding: 60px 0 100px 0;
+
+  @media screen and (max-width: 768px), (max-width: 376px) {
+    padding: 40px 10px 100px;
+    margin-top: 50px;
+  }
+
+  @media screen and (max-width: 376px) {
+    padding: 20px 10px 50px;
+    margin-top: 50px;
+  }
+}
+
+.row-footer {
+  @include flex-box (row, space-between, 32);
+}
+
