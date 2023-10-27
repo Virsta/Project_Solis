@@ -9,7 +9,7 @@
     margin: 70px 0 20px ;
   }
 
-  @media screen and (max-width: 376px) {
+  @media screen and (max-width: 420px) {
     margin: 50px 0 20px;
     @include font-style(30, 35);
   }
@@ -28,13 +28,13 @@
     @include font-style(15, 26, 0, #fff, 0.8, 300);
   }
 
-  @media screen and (max-width: 376px) {
+  @media screen and (max-width: 420px) {
     @include font-style(15, 20, 0, #fff, 0.8, 300);
   }
 }
 
 .opacity {
-  @media screen and (max-width: 768), (max-width: 376px) {
+  @media screen and (max-width: 768), (max-width: 420px) {
     opacity: 0.3;
   }
 }
@@ -47,7 +47,7 @@
   &-symbol {
     @include font-style(40, 50);
 
-    @media screen and (max-width: 376px) {
+    @media screen and (max-width: 420px) {
       @include font-style(20, 20, 0, #fff);
       margin: 0 20px 12px;
     }
@@ -58,7 +58,7 @@
     margin: 0 40px 12px;
   }
 
-  @media screen and (max-width: 376px) {
+  @media screen and (max-width: 420px) {
     @include font-style(25, 28, 0, #fff);
     margin: 10px 40px 5px;
     
@@ -78,7 +78,7 @@
     @include font-style(25, 30, 0, #fff);
   }
 
-  @media screen and (max-width: 376px) {
+  @media screen and (max-width: 420px) {
     @include font-style(20, 20, 0, #fff);
   }
 }
@@ -92,7 +92,7 @@
     @include font-style(25, 30, 0, #fff);
   }
 
-  @media screen and (max-width: 376px) {
+  @media screen and (max-width: 420px) {
     @include font-style(18, 20, 0, #fff);
   }
   
@@ -105,7 +105,7 @@
     width: 102px;
     height: 84px;
 
-    @media screen and (max-width: 376px) {
+    @media screen and (max-width: 420px) {
       background-size: 100%;
       background-repeat: no-repeat;
       width: 80px;
@@ -120,7 +120,7 @@
   @include font-style(20, 20, 0.08);
   font-style: $secondary-font-italic;
 
-  @media screen and (max-width: 376px) {
+  @media screen and (max-width: 420px) {
     @include font-style(18, 20, 0, #fff);
   }
 }
@@ -130,7 +130,7 @@
   @include font-style(24, 48);
   margin: 0 110px 0 0;
 
-  @media screen and (max-width: 376px) {
+  @media screen and (max-width: 420px) {
     @include font-style(18, 20, 0, #fff);
   }
 }
@@ -145,7 +145,7 @@
   @include font-style(40, 39);
   margin: 29px 0;
 
-  @media screen and (max-width: 376px) {
+  @media screen and (max-width: 420px) {
     @include font-style(30, 35);
   }
 }
@@ -175,7 +175,7 @@
 }
 
 .text-center-resp {
-  @media screen and (max-width: 376px) {
+  @media screen and (max-width: 420px) {
     text-align: center;
     justify-content: center;
   }

@@ -27,7 +27,7 @@
 .margin-top-150 {
   margin-top: 150px;
 
-  @media screen and (max-width: 768px), (max-width: 376px) {
+  @media screen and (max-width: 768px), (max-width: 420px) {
     margin-top: 50px;
   }
 }
@@ -35,7 +35,7 @@
 .margin-top-165 {
   margin-top: 165px;
 
-  @media screen and (max-width: 376px) {
+  @media screen and (max-width: 420px) {
     margin-top: 20px;
   }
 }
@@ -87,7 +87,7 @@
     margin-top: 100px;
   }
 
-  @media screen and (max-width: 376px) {
+  @media screen and (max-width: 420px) {
     margin-top: 0;
   }
 }
